@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hyunji Lee" />
+    <meta
+      name="description"
+      content="Application to manage user's shopping list"
+    />
+    <title>Shopping List</title>
+    <script
+      src="https://kit.fontawesome.com/b3f5308a3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <aside class="container categories">
+      <label for="groceries" class="category">
+        <input
+          type="checkbox"
+          id="groceries"
+          class="category__checkbox"
+          checked
+        />Groceries
+      </label>
+      <label for="necessities" class="category">
+        <input
+          type="checkbox"
+          id="necessities"
+          class="category__checkbox"
+          checked
+        />Necessities
+      </label>
+      <label for="clothing" class="category">
+        <input
+          type="checkbox"
+          id="clothing"
+          class="category__checkbox"
+          checked
+        />Clothing
+      </label>
+      <label for="others" class="category">
+        <input
+          type="checkbox"
+          id="others"
+          class="category__checkbox"
+          checked
+        />Others
+      </label>
+    </aside>
+    <section class="container shopping-list">
+      <header class="shopping-list__header">
+        SOPPING LIST<button class="btn clear">Clear</button>
+      </header>
+      <ul class="shopping-list__list"></ul>
+      <form class="shopping-list__form">
+        <select class="form__select">
+          <option value="">Category</option>
+          <option value="groceries">Groceries</option>
+          <option value="necessities">Necessities</option>
+          <option value="clothing">Clothing</option>
+          <option value="others">Others</option>
+        </select>
+        <input type="text" class="form__input" />
+        <button type="submit" class="btn form__add">Add</button>
+      </form>
+    </section>
+  </body>
+</html>
